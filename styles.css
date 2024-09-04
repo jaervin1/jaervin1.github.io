@@ -1,0 +1,37 @@
+html{
+    min-height: 100%;
+    background: #89abe3;
+}
+body {
+    font-family:'Helvetica', 'Arial', 'sans-serif'
+}
+h1 {
+    color: #DCE2C8;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #DCE2C8;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #89abe3;
+}
+.assign {
+    margin: 10px;
+    padding: 10px;
+    background-color: #ea738d;
+    display: flex;
+    border-radius: 20px;
+    color: #DCE2C8;
+    font-size: 20px;
+}
+
+.assign img {
+    width: 200px;
+    margin: 10px;
+    border: 2px solid #DCE2C8;
+}
+
