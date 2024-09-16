@@ -19,19 +19,20 @@ a:hover {
     text-decoration: none;
     color: #89abe3;
 }
-.assign {
-    margin: 10px;
-    padding: 10px;
-    background-color: #ea738d;
-    display: flex;
-    border-radius: 20px;
-    color: #DCE2C8;
-    font-size: 20px;
+
+.contact{
+    color:aquamarine;
 }
 
-.assign img {
-    width: 200px;
-    margin: 10px;
-    border: 2px solid #DCE2C8;
+.projects {
+    color:chartreuse;
+}
+
+.about {
+    color:crimson;
+}
+
+.skills {
+    color:darkorchid;
 }
 
