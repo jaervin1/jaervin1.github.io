@@ -1,65 +1,104 @@
-html{
+html {
     min-height: 100%;
-    background: #89abe3;
+    background: #EDF6F9;
 }
+
 body {
-    font-family:'Helvetica', 'Arial', 'sans-serif'
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: #283618;
 }
+
 h1 {
-    color: #DCE2C8;
+    color: #52796F;
     text-align: center;
 }
 
 a {
     text-decoration: none;
-    color: #DCE2C8;
+    color: #52796F;
 }
 
 a:hover {
     text-decoration: none;
-    color: #89abe3;
+    color: #C08497;
 }
 
-.contact{
-    color:aquamarine;
+.contact {
+    color: #52796F;
 }
 
 .projects {
-    color:chartreuse;
+    color: #283618;
 }
 
 .about {
-    color:crimson;
+    color: #52796F;
 }
 
 .skills {
-    color:darkorchid;
+    color: #C9ADA7;
 }
 
-.projects { display:flex; flex-wrap:wrap; } /* condensed to save space */
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .project {
-width: 30%;
-margin: 10px;
-padding: 20px 10px;
-background: white; /* pick a color */
-border-radius: 25%;
+    width: 30%;
+    margin: 10px;
+    padding: 20px;
+    background: #B0C4B1;
+    border-radius: 15px;
+    text-align: center;
 }
 
-.project img{
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-    border: 2px solid rgb(126, 14, 201); /* choose a color */
-    display: block;
-    margin: auto;
-    }
+.project img {
+    width: 80%;
+    max-width: 250px;
+    height: auto;
+    margin: 10px auto;
+    border: 2px solid #52796F;
+    border-radius: 10px;
+}
 
- a { /* change the appearance of ALL links */
-    text-decoration: none;
-    color: purple;
-    }
-.project p { /* change the appearance of paragraph tags inside .project divs */
-    text-align: center;
+.project p {
     margin: 15px;
+}
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin: 0 100px;
+    background: #B0C4B1;
+    border-radius: 15px;
+}
+
+.about img {
+    width: 40%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid #52796F;
+}
+
+.about p {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .projects, .about {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 20px;
     }
+    .project, .about img, .about p {
+        width: 100%;
+    }
+}
