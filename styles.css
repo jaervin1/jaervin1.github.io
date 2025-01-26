@@ -1,44 +1,107 @@
-/*9CAEA9, e7eeea*/
-body {
-    background-color: #9CAEA9;
-    color: #6F6866;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: large;
+#main-page {
+  background-color: #9caea9;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
+header{
+  padding: 10px;
+}
+
+header h1{
+  text-align: center;
+}
+
+
+
+#content {
+  width: 100%;
+  margin: 10px auto;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+#content h2 {
+  display: block;
+}
+
+.assignment {
+  background-color: #cfddd5;
+  display: flex;
+  padding: 10px;
+  margin: 10px auto;
+  flex-direction: column;
+  border: solid 2px #38302e;
+  border-radius: 3px;
+  width: 100%;
+  font-size: small;
+}
+
+.assignment img {
+  width: 100%;
+  max-width: 300px;
+  border: solid 1px #38302e;
+  margin: 0 auto;
+}
+
+.assignment h2{
+  text-align: center;
+}
+
+.assignment section {
+  flex: 1;
+}
+
+
+
+/* Typography */
+
+
 a {
-    text-decoration: none;
-    color: #655653;
+  text-decoration: none;
+  color: #38302e;
 }
 
 a:hover{
-    color: #221D1C;
+  text-decoration: underline;
 }
 
-#introduction {
-    background-color: #cfddd5;
-    width: 80%;
-    margin: auto;
-    padding: 10px;
-    border-style: solid;
-    border-color: #38302E;
+
+header h1 {
+  text-align: center;
 }
 
-#assignments {
-    background-color: #cfddd5;
-    width: 80%;
-    margin: auto; 
-    margin-top: 5px;
-    padding: 5px;
-    border-style: solid;
-    border-color: #38302E;
+header h3 {
+  font-size: larger;
 }
 
-#assignments h2{
-    text-align: center;
+h1,
+h2,
+h3 {
+  color: #38302e;
 }
 
-h1,h2 {
-    color:#38302E;
+.assignment section {
+  flex: 1;
 }
 
+@media (min-width: 850px) {
+  #content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .assignment {
+    flex: 1;
+    max-width: 500px;
+    margin: 10px;
+  }
+}
+
+  
