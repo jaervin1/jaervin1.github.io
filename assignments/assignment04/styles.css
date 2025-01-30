@@ -1,0 +1,106 @@
+html body{
+    margin: 0;
+}
+
+#top-bar{
+    margin:0;
+}
+
+#top-bar header{
+    background-color: #000;
+    text-align: center;
+    padding: 5px;
+    padding-top: 0%;
+}
+
+#top-bar #coaas{
+    background-color: #73000a;
+}
+
+#top-bar #coaas h3{
+    color: #fff;
+    margin-top: 0;
+    width: 45%;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#top-bar h1{
+    background-color: #73000a;
+    color: #fff;
+    margin-top: 0;
+    width: 45%;
+}
+
+#nav-bar{
+    width: 45%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+}
+
+#nav-bar div{
+    text-align: left;
+    justify-content: center;
+}
+
+#nav-bar div img{
+    margin: auto;
+}
+
+#nav-bar nav{
+    vertical-align: top;
+}
+
+nav{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items:
+
+}
+
+.nav-list{
+    margin-top: 0%;
+    margin-bottom:0%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.nav-list li{
+    display: inline;
+    text-decoration: none;
+    color: #fff;
+    justify-content: space-evenly;
+    flex: one;
+    white-space:nowrap;
+    margin-right: 3px;
+    margin-left: 3px;
+    display: flex;
+}
+
+.nav-list li p{
+    margin: 0;
+}
+
+.nav-list li a, .nav-list li p{
+    text-decoration: none;
+    color: #fff;
+    font-size: 7px;
+}
+
+.nav-list li a:hover{
+    background-color: #73000a;
+}
+
+.one{
+    flex: 1;
+}
+
+@media(min-width: 800px){
+
+}
