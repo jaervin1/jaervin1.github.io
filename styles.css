@@ -20,13 +20,20 @@ header h1{
 #content {
   width: 100%;
   margin: 10px auto;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  text-align: center;
   gap: 20px;
 }
 
 #content h2 {
   display: block;
+}
+
+#assignments{
+  margin: 0 auto;
+  padding-right: 15px;
+  justify-content: space-around;
 }
 
 .assignment {
@@ -41,7 +48,7 @@ header h1{
   font-size: small;
 }
 
-.assignment img {
+img {
   width: 100%;
   max-width: 300px;
   border: solid 1px #38302e;
@@ -54,6 +61,33 @@ header h1{
 
 .assignment section {
   flex: 1;
+}
+
+.project-content{
+  background-color: #798D87;
+  color: #F0F0F0;
+  display: flex;
+  padding: 10px;
+  margin: 10px auto;
+  flex-direction: column;
+  border: solid 2px #4A5D56;
+  border-radius: 3px;
+  width: 100%;
+  font-size: small;
+}
+
+.project-content img{
+  max-width: 200px;
+}
+
+.project-content h2{
+  color: #1F2E2E;
+}
+
+#project{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 
@@ -90,17 +124,24 @@ h3 {
 }
 
 @media (min-width: 850px) {
-  #content{
-    display: flex;
-    flex-direction: row;
+  #assignments, #project{
+    display:flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
-  .assignment {
-    flex: 1;
-    max-width: 500px;
+  .assignment, .project-content {
+    max-width: 30%;
     margin: 10px;
+  }
+
+  #project{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .project-content{
+    max-width: 30%;
   }
 }
 

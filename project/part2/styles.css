@@ -1,0 +1,9 @@
+iframe{
+    margin: auto;
+    display: block;
+}
+
+body{
+    align-items: center;
+    justify-content: center;
+}
