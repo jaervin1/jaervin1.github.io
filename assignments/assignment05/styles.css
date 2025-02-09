@@ -1,0 +1,84 @@
+:root {
+  --background: #9caea9;
+  --content_background: #cfddd5;
+  --text-color: #38302e;
+  --border: #38302e;
+}
+
+html {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: var(--background);
+  font-size: larger;
+}
+
+header {
+  text-align: center;
+  color: var(--text-color);
+  font-size: x-large;
+}
+
+main {
+  text-align: center;
+  color: var(--text-color);
+}
+
+.columns {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.columns section {
+  background-color: var(--content_background);
+  padding: 40px;
+  padding-top: 10px;
+  margin: 10 10;
+  border: 2px solid var(--border);
+}
+
+.columns section h3 {
+  padding: 15px;
+}
+
+.checked {
+  color: black;
+}
+
+.color-picker {
+  text-align: center;
+  justify-content: space-around;
+}
+
+.color-picker > * {
+  padding-top: 10px;
+}
+
+.color-picker input {
+  width: 80px;
+  height: 80px;
+}
+
+.color-picker span {
+  display: block;
+}
+
+#say-hello {
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+@media (min-width: 850px) {
+  .columns {
+    flex-direction: row;
+  }
+
+  .columns section {
+    width: 20%;
+  }
+}

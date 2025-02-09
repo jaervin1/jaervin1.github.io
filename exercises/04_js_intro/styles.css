@@ -65,6 +65,21 @@ main {
 
 }
 
+.sad{
+    color: blue;
+}
+
+
+.happy{
+    color: pink;
+}
+
+/* Shows Nothing */
+.hidden{
+    display: none;
+}
+
+
 #animation-fun{
     background-color: var(--primary-color);
     color: white;
