@@ -141,6 +141,7 @@ main {
 .filters img {
   position: relative;
   top: 5px;
+  padding: 5px;
 }
 
 #explore-page section {
@@ -423,6 +424,49 @@ footer {
 
 #aboutus hr{
   margin: 30px 0px;
+}
+
+#add-activity{
+  background-color: var(--content-background-two);
+  padding: 10px;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+
+#add-activity h2{
+  font-size: 5ch;
+  padding: 5px;
+}
+
+.activity-field{
+  display: flex;
+  background-color: var(--content-background);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.activity-field h3{
+  padding: 5px;
+  margin: 4px;
+}
+
+.user-input{
+  width: 70%;
+  margin: auto 0;
+}
+
+#submit-button{
+  align-items: center;
+  margin: auto auto;
+}
+
+#submit-field{
+  background-color: var(--content-background-two);
+  padding: 10px;
+  border-radius: 10px;
+  margin: 5px;
+  text-align: center;
 }
 
 /* Footer */

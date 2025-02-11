@@ -1,0 +1,66 @@
+<html lang="en">
+  <head>
+    <title>Wireframe Recreation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>OutdoorSC</h2>
+        <ul class="nav-links">
+          <li>
+            <a href="index.html"><i class="fa fa-home"></i> Home</a>
+          </li>
+          <li>
+            <a href="explore.html"><i class="fa fa-binoculars"></i> Explore</a>
+          </li>
+          <li>
+            <a href="profile.html"><i class="fa fa-user"></i> Profile</a>
+          </li>
+          <li>
+            <a href="about-us.html"
+              ><i class="fa fa-question-circle"></i> About Us</a
+            >
+          </li>
+          <li class="search-container">
+            <input type="text" class="search-bar" placeholder="Search..." />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="add-activity">
+      <a href="explore.html"
+        ><button id="back">
+          <i class="fa fa-arrow-left fa-2x" aria-hidden="true"></i></button
+      ></a>
+      <h2>Add Activity</h2>
+      <hr />
+      <div class="activity-field">
+        <h3>Activity Name:</h3>
+        <input type="text" class="user-input" />
+      </div>
+      <div class="activity-field">
+        <h3>Decription:</h3>
+        <input type="text" class="user-input" />
+      </div>
+      <div class="activity-field">
+        <h3>Location:</h3>
+        <input type="text" class="user-input" />
+      </div>
+      <div class="activity-field">
+        <h3>Images:</h3>
+        <input type="file" id="photo-browse" />
+      </div>
+      <div id="submit-field">
+        <button id="submit-button">Submit</button>
+      </div>
+    </main>
+    <footer>
+      <h2>&copy; 2025 Alex Ervin</h2>
+    </footer>
+  </body>
+</html>
