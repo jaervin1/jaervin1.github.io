@@ -1,55 +1,59 @@
 <html lang="en">
   <head>
     <title>Wireframe Recreation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <nav>
-        <h2>OutdoorSC</h2>
-        <ul>
-          <li>
-            <img src="https://placehold.co/15" />
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <img src="https://placehold.co/15" />
-            <a href="explore.html">Explore</a>
-          </li>
-          <li>
-            <img src="https://placehold.co/15" />
-            <a href="profile.html">Profile</a>
-          </li>
-          <li>
-            <img src="https://placehold.co/15" />
-            <a href="about-us.html">About Us</a>
-          </li>
-          <li>
-            <input class="search-bar" type="text" />
-          </li>
-        </ul>
-      </nav>
-    </header>
+    <nav>
+      <h2>OutdoorSC</h2>
+      <ul class="nav-links">
+        <li>
+          <a href="index.html"><i class="fa fa-home"></i> Home</a>
+        </li>
+        <li>
+          <a href="explore.html"><i class="fa fa-binoculars"></i> Explore</a>
+        </li>
+        <li>
+          <a href="profile.html"><i class="fa fa-user"></i> Profile</a>
+        </li>
+        <li>
+          <a href="about_us.html"
+            ><i class="fa fa-question-circle"></i> About Us</a
+          >
+        </li>
+        <li class="search-container">
+          <input type="text" class="search-bar" placeholder="Search..." />
+        </li>
+      </ul>
+    </nav>
     <main id="explore-page">
       <section class="search-container">
         <input type="text" class="search-input" placeholder="Search" />
         <input type="text" class="zipcode-input" placeholder="29201" />
-        <img src="https://placehold.co/20" />
+        <i class="fa fa-map-marker"></i>
       </section>
 
       <section class="filters">
         <button>Distance</button>
         <button>Rating (stars)</button>
         <button>Difficulty</button>
-        <img src="https://placehold.co/20" />
+        <button><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
       </section>
       <section class="explore">
         <div class="result content">
           <div class="result-info">
-            <a href="activity.html"><h3>
-              Boardwalk Loop
-              <img src="https://placehold.co/75x15" class="star-rating" />
-            </h3></a>
+            <a href="activity.html"
+              ><h3>Boardwalk Loop</h3>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span
+            ></a>
+
             <p>
               Lorem ipsum odor amet, consectetuer adipiscing elit. Potenti in
               tristique fermentum rhoncus neque. Sit nunc torquent magna
@@ -58,14 +62,41 @@
             </p>
           </div>
           <div class="result-image">
-            <img src="https://placehold.co/300x150" />
+            <img src="https://placehold.co/300x200" />
+          </div>
+        </div>
+        <div class="result content">
+          <div class="result-info">
+            <a href="activity.html"
+              ><h3>Mountain Vista Trail</h3>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-o checked"></span>
+
+            </a>
+
+            <p>
+              Lorem ipsum odor amet, consectetuer adipiscing elit. Potenti in
+              tristique fermentum rhoncus neque. Sit nunc torquent magna
+              eleifend blandit enim? Phasellus amet senectus nec fermentum
+              interdum placerat molestie vestibulum.
+            </p>
+          </div>
+          <div class="result-image">
+            <img src="https://placehold.co/300x200" />
           </div>
         </div>
         <div class="result content">
           <div class="result-info">
             <h3>
-              Boardwalk Loop
-              <img src="https://placehold.co/75x15" class="star-rating" />
+              Waterfall Wonder
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-o checked"></span>
+              <span class="fa fa-star-o checked"></span>
             </h3>
             <p>
               Lorem ipsum odor amet, consectetuer adipiscing elit. Potenti in
@@ -75,24 +106,7 @@
             </p>
           </div>
           <div class="result-image">
-            <img src="https://placehold.co/300x150" />
-          </div>
-        </div>
-        <div class="result content">
-          <div class="result-info">
-            <h3>
-              Boardwalk Loop
-              <img src="https://placehold.co/75x15" class="star-rating" />
-            </h3>
-            <p>
-              Lorem ipsum odor amet, consectetuer adipiscing elit. Potenti in
-              tristique fermentum rhoncus neque. Sit nunc torquent magna
-              eleifend blandit enim? Phasellus amet senectus nec fermentum
-              interdum placerat molestie vestibulum.
-            </p>
-          </div>
-          <div class="result-image">
-            <img src="https://placehold.co/300x150" />
+            <img src="https://placehold.co/300x200" />
           </div>
         </div>
       </section>
