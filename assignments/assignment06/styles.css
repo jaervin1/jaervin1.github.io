@@ -33,6 +33,15 @@ main {
   margin: 10px;
 }
 
+#triangle-toggle{
+  cursor: grab;
+  text-align: left;
+  margin-left: 20px;
+}
+
+#exercise-list{
+}
+
 .columns {
   display: flex;
   justify-content: space-evenly;
@@ -73,6 +82,8 @@ main {
   width: 200px;
   height: 200px;
   margin: 10px auto;
+  text-align: center;
+  vertical-align:middle;
 }
 
 #transport-img{
@@ -115,6 +126,14 @@ footer {
   display: none;
 }
 
+#divider{
+  display:none;
+}
+
+.nav-hidden{
+  display: none;
+}
+
 @media (min-width: 850px) {
   .columns {
     flex-direction: row;
@@ -122,6 +141,10 @@ footer {
 
   #triangle-toggle {
     display: none;
+  }
+
+  #divider{
+    display: inline;
   }
 
   .columns section {
@@ -133,5 +156,9 @@ footer {
     text-align: center;
     margin: 10px auto;
     border-radius: 10px;
+  }
+
+  .nav-hidden{
+    display: inline;
   }
 }

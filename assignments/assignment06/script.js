@@ -1,13 +1,42 @@
+document.getElementById("exercise-one-btn").onclick = () => {
+    exerciseOne = document.getElementById("exercise-one");
+    exerciseTwo = document.getElementById("exercise-two");
+    if(exerciseOne.classList.contains("hidden")){
+        exerciseOne.classList.remove("hidden");
+        exerciseTwo.classList.add("hidden");
+    }
+    else{
+        return;
+    }
+};
+
+document.getElementById("exercise-two-btn").onclick = () => {
+    exerciseOne = document.getElementById("exercise-one");
+    exerciseTwo = document.getElementById("exercise-two");
+    if(exerciseTwo.classList.contains("hidden")){
+        exerciseTwo.classList.remove("hidden");
+        exerciseOne.classList.add("hidden");
+    }
+    else{
+        return;
+    }
+};
+
+
+document.getElementById("triangle-toggle").onclick = () => {
+    document.getElementById("exercise-list").classList.toggle("nav-hidden");
+};
+
+
+
+
+
 //Exercise 1
-document.getElementById("transportation-input");
-
-
-
 document.getElementById("transportation-input").onchange = () => {
     let transportationType = document.getElementById("transportation-input").value;
     console.log(transportationType);
     const transportImage = document.getElementById("transport-img");
-    transportImage.classList.remove("hidden")
+    transportImage.classList.remove("hidden");
     if(transportationType === "bike"){
         transportImage.src = "images/bike.jpg";
     }

@@ -14,15 +14,16 @@
       <h1>Assignment 5</h1>
       <h3 class="topic">If Statements</h3>
       <nav>
-        <div id="triangle-toggle"></div>
-        <ul>
-          <li><a href="#">Exercise 1</a></li>
-          <li><a href="#">Exercise 2</a></li>
+        <div id="triangle-toggle">&#9658;</div>
+        <ul id="exercise-list" class="nav-hidden">
+          <li><a id="exercise-one-btn">Exercise 1</a></li>
+          <li id="divider">|</li>
+          <li><a id="exercise-two-btn">Exercise 2</a></li>
         </ul>
       </nav>
     </header>
     <main id="exercises">
-      <div id="exercise-one" class="exercise">
+      <div id="exercise-one" class="exercise hidden">
         <h2>Travelling</h2>
         <p>Enter your mode of transportation</p>
         <input
@@ -34,7 +35,7 @@
           <img id="transport-img" class="hidden" src="">
         </section>
       </div>
-      <div id="exercise-two" class="exercise">
+      <div id="exercise-two" class="exercise hidden">
         <h2>Color My Heart</h2>
         <ul id="color-buttons">
           <li><button id="btn-blue">blue</button></li>
