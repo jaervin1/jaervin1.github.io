@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Tab Name</title>
+  </head>
+  <body>
+    <div id="content">
+      <header>
+        <img id="main-logo" src="https://picsum.photos/50" />
+        <h1>Main Title</h1>
+        <nav id="main-nav">
+          <!--Only Flex's direct child-->
+          <ul class="columns">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="coding.html">JavaScript</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <nav id="sub-nav">
+          <ul class="columns">
+            <li><a href="#">Link 1</a></li>
+            <li><a href="#">Link 2</a></li>
+            <li><a href="#">Link 3</a></li>
+            <li><a href="#">Link 4</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="columns">
+        <section>
+            <h3>Write to a paragraph</h3>
+            <button id="btn-click-me">Click Me</button>
+            <p id="result"></p>
+        </section>
+        <section>
+          <h3>Color a paragraph</h3>
+          <button id="btn-color">Color Below</button>
+          <p id="message">Hello</p>
+        </section> 
+        <section>
+          <h3></h3>
+          <button id="btn-clear">Clear</button>
+          <p id="message">Hello</p>
+        </section> 
+        <section>
+          <p id="group-message"></p>
+        </section>
+        <section>
+          <h3>Enter Feeling:</h3>
+          <input id="feeling" type="text">
+          <p id="mirror-feeling"></p>
+        </section>
+        <section>
+          <p>
+            <label>Start: </label><input type="text" id="input-start">
+            <label>End: </label><input type="text" id="input-end">
+            
+          </p>
+          <button id="btn-display">Display</button>
+          <p class="error" id="number-error"></p>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; myname</p>
+      </footer>
+    </div>
+    <script src="script.js"></script>
+    <script src="loops.js"></script>
+  </body>
+</html>

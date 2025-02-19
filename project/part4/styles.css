@@ -146,12 +146,12 @@ main {
 .recommended img {
   display: block;
   margin: 0 auto;
-  width: 85%;
+  width: 80%;
   height: auto;
 }
 
 .featured a h2 {
-  padding: 20px;
+  padding: 5px;
 }
 
 .filters img {
@@ -443,6 +443,17 @@ h1, h2, h3, h4{
   padding-left: 20px;
 }
 
+#aboutus-gallery{
+  text-align: center;
+}
+
+#aboutus-gallery img{
+  max-width: 75%;
+  height: auto;
+  margin-top: 10px;
+  border: solid 3px var(--header-color);
+}
+
 #aboutus p{
   font-size: x-large;
   width: 90%;
@@ -457,6 +468,23 @@ h1, h2, h3, h4{
 
 #aboutus hr{
   margin: 30px 0px;
+}
+
+.social-list {
+  list-style: none; 
+  padding: 0; 
+  margin: 0; 
+  display: flex;
+  justify-content: center;
+}
+
+.social-list li a {
+  display: block; 
+  padding: 10px; 
+  font-size: 20px; 
+  color: var(--primary);
+  text-decoration: none;
+  border-radius: 10px;
 }
 
 #add-activity{
@@ -569,7 +597,4 @@ footer h2 {
     flex-direction: row;
   }
 
-  #aboutus{
-    width: 70%;
-  }
 }
