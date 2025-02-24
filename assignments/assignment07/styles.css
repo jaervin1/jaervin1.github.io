@@ -33,13 +33,28 @@ main {
   margin: 10px;
 }
 
-#triangle-toggle{
-  cursor: grab;
-  text-align: left;
-  margin-left: 20px;
+#ladder-section{
+  margin: 5px;
+  
 }
 
-#exercise-list{
+#ladder-section div{
+  width: 100px;
+  height: 50px;
+  border: 2px solid black;
+  margin: 0 auto;
+}
+
+#ladder-section:first-of-type{
+  border-top: 0;
+}
+
+#ladder-section:last-child{
+  border-bottom: 0;
+}
+
+#ladder-section img{
+  position: relative;
 }
 
 .columns {
