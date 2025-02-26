@@ -1,0 +1,175 @@
+:root {
+  --primary-background: #9caea9;
+  --secondary-background: #cfddd5;
+  --text-color-primary: #38302e;
+  --text-color-secondary: #6b8f71;
+  --border-color: #38302e;
+  --link-color: #2a6478;
+}
+
+html {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: var(--primary-background);
+  font-size: larger;
+}
+
+header {
+  text-align: center;
+  color: var(--text-color-primary);
+  font-size: x-large;
+}
+
+nav {
+  text-align: center;
+}
+
+main {
+  text-align: center;
+  color: var(--text-color-primary);
+}
+
+#exercises{
+  margin: 10px;
+}
+
+#popup{
+  background-color: var(--secondary-background);
+  color: var(--text-color-secondary);
+  position: absolute;
+  left: 40%;
+  top: 20%;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+#popup img{
+  width: 400px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.columns section {
+  background-color: var(--secondary-background);
+  padding: 40px;
+  padding-top: 10px;
+  margin: 10 10;
+  border: 2px solid var(--border);
+}
+
+.columns section h3 {
+  padding: 15px;
+}
+
+.checked {
+  color: black;
+}
+
+.exercise {
+  background-color: var(--secondary-background);
+  color: var(--text-color-secondary);
+  padding: 10px;
+  margin: 5 auto;
+}
+
+#transportation-input{
+  width: 250px;
+  height: 25px;
+}
+
+#transport-photo-area{
+  background-color: var(--primary-background);
+  width: 200px;
+  height: 200px;
+  margin: 10px auto;
+  text-align: center;
+  vertical-align:middle;
+}
+
+#transport-img{
+  max-width: 150px;
+  max-height: auto;
+}
+
+#color-buttons{
+  margin: 5px;
+  padding: 5px;
+}
+
+nav {
+  text-align: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color-primary);
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li, #color-buttons li {
+  display: inline;
+}
+
+
+nav a:hover {
+  color: var(--link-color);
+}
+
+footer {
+  text-align: center;
+}
+
+.hidden{
+  display: none;
+}
+
+
+
+#divider{
+  display:none;
+}
+
+.nav-hidden{
+  display: none;
+}
+
+@media (min-width: 850px) {
+  .columns {
+    flex-direction: row;
+  }
+
+  #triangle-toggle {
+    display: none;
+  }
+
+  #divider{
+    display: inline;
+  }
+
+  .columns section {
+    width: 20%;
+  }
+
+  .exercise {
+    width: 35%;
+    text-align: center;
+    margin: 10px auto;
+    border-radius: 10px;
+  }
+
+  .nav-hidden{
+    display: inline;
+  }
+}
