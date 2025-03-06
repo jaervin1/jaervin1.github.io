@@ -3,7 +3,7 @@ document.getElementById("hamburger-toggle").onclick = () => {
 };
 
 const getActivities = async () => {
-  const url = "https://portiaportia.github.io/json/shoes.json";
+  const url = "https://github.com/jaervin1/jaervin1.github.io/blob/main/json/activity.json";
   try {
     const response = await fetch(url);
     return response.json;
@@ -14,7 +14,7 @@ const getActivities = async () => {
 
 const showActivities = async () => {
   const activities = await getActivities();
-  const activitysSection = document.getElementById("explore");
+  const activitiesSection = document.getElementById("explore");
 
   activities.array.forEach((activity) => {
     const activitySection = document.createElement("div");
@@ -49,6 +49,8 @@ const showActivities = async () => {
 
     activitySection.appendChild(activityImage);
 
-    
+    activitiesSection.appendChild(activitySection);
   });
 };
+
+showActivities();
