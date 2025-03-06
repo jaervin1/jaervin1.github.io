@@ -1,0 +1,132 @@
+<html lang="en">
+  <head>
+    <title>Wireframe Recreation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <h2>OutdoorSC</h2>
+      <div class="hamburger-toggle" id="hamburger-toggle">
+        <i class="fa fa-bars"></i>
+      </div>
+      <ul class="nav-links nav-hidden">
+        <li>
+          <a href="index.html"><i class="fa fa-home"></i> Home</a>
+        </li>
+        <li>
+          <a href="explore.html"><i class="fa fa-binoculars"></i> Explore</a>
+        </li>
+        <li>
+          <a href="profile.html"><i class="fa fa-user"></i> Profile</a>
+        </li>
+        <li>
+          <a href="about_us.html"
+            ><i class="fa fa-question-circle"></i> About Us</a
+          >
+        </li>
+        <li class="search-container">
+          <input type="text" class="search-bar" placeholder="Search..." />
+        </li>
+      </ul>
+    </nav>
+    <main id="explore-page">
+      <section class="search-container">
+        <input type="text" class="search-input" placeholder="Search" />
+        <input type="text" class="zipcode-input" placeholder="29201" />
+        <i class="fa fa-map-marker"></i>
+      </section>
+
+      <section class="filters">
+        <button>Distance</button>
+        <button>Rating (stars)</button>
+        <button>Difficulty</button>
+        <button>Activity Type</button>
+        <a href="add_activity.html"
+          ><button><i class="fa fa-plus-circle" aria-hidden="true"></i></button
+        ></a>
+      </section>
+      <section class="explore" id="explore">
+        <div class="result content">
+          <div class="result-info">
+            <a href="activity.html"
+              ><h3>Boardwalk Loop</h3>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span
+            ></a>
+
+            <p>
+              This is an accessible, easy-to-follow, densely foliated, boardwalk
+              loop located in Congaree National Forest. As you walk through the
+              various flood plain forest habitats, look for pileated
+              woodpeckers, barred owls, osprey, great blue heron, and a variety
+              of other birds and other wildlife.
+            </p>
+          </div>
+          <div class="result-image">
+            <img src="images/boardwalk-trail.jpg" />
+          </div>
+        </div>
+        <div class="result content">
+          <div class="result-info">
+            <a href="activity.html"
+              ><h3>Mountain Vista Trail</h3>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-o checked"></span>
+            </a>
+
+            <p>
+              Wander through a tapestry of diverse ecosystems, where the
+              landscape transforms with every step you take. Experience the
+              changing faces of nature as you traverse forests, meadows, and
+              waterways, immersing yourself in the vibrant tapestry of wildlife
+              and flora. This trail offers an educational and refreshing outdoor
+              adventure, inviting you to appreciate the delicate balance of the
+              natural world.
+            </p>
+          </div>
+          <div class="result-image">
+            <img src="images/trail-three.jpg" />
+          </div>
+        </div>
+        <div class="result content">
+          <div class="result-info">
+            <h3>
+              Waterfall Wonder
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star-o checked"></span>
+              <span class="fa fa-star-o checked"></span>
+            </h3>
+            <p>
+              Explore rugged terrain on this adventurous trail, offering a more
+              demanding and challenging hiking experience amidst a dramatic
+              natural setting. Designed for seasoned adventurers seeking a
+              physical challenge and immersive outdoor experience, this trail
+              winds through captivating landscapes, requiring stamina and skill.
+              Prepare to be rewarded with stunning vistas and a profound
+              connection to the raw, untamed beauty of the wilderness
+            </p>
+          </div>
+          <div class="result-image">
+            <img src="images/trail-four.jpg" />
+          </div>
+        </div>
+      </section>
+      <script src="script.js"></script>
+    </main>
+    <footer>
+      <h2>&copy; 2025 Alex Ervin</h2>
+    </footer>
+  </body>
+</html>

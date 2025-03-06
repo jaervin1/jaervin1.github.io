@@ -1,0 +1,89 @@
+[
+  {
+    "name": "Boardwalk Trail",
+    "author": "jaervin",
+    "location": "Congaree National Park",
+    "description": " Scenic walk through one of the most unique biospheres in the state.",
+    "length": 2.4,
+    "type": "Loop",
+    "difficulty": "EASY",
+    "rating": 5,
+    "reviews": [
+      {
+        "author": "AwesomeCarnival18",
+        "rating": 5,
+        "comment": "Great place! brought my family and they loved it. Such a close but beautiful spot"
+      },
+      {
+        "author": "TheDude2",
+        "rating": 5,
+        "comment": "Easy and Simple, great outing"
+      },
+      {
+        "author": "SandMan23",
+        "rating": 5,
+        "comment": "AWESOME"
+      }
+    ],
+    "pictures": ["images/image1.jpg", "images/image2.jpg", "images/image3.jpg"]
+  },
+  {
+    "name": "Table Rock Trail",
+    "author": "hikeguru",
+    "location": "Table Rock State Park",
+    "description": "A challenging trail leading to breathtaking panoramic views from Table Rock Mountain. The steep ascent is rewarded with one of the best overlooks in South Carolina.",
+    "length": 7.2,
+    "type": "Out and Back",
+    "difficulty": "HARD",
+    "rating": 4.8,
+    "reviews": [
+      {
+        "author": "NatureNerd45",
+        "rating": 5,
+        "review": "Tough but rewarding! The view from the top is absolutely stunning."
+      },
+      {
+        "author": "MountainGoatHiker",
+        "rating": 4,
+        "review": "Steep and challenging, but worth the effort. Bring plenty of water!"
+      },
+      {
+        "author": "SCExplorer",
+        "rating": 5,
+        "review": "One of the best hikes in the state. Amazing views!"
+      }
+    ]
+  },
+  {
+    "name": "Raven Cliff Falls Trail",
+    "author": "waterfallfan",
+    "location": "Caesars Head State Park",
+    "description": "A scenic hike leading to an overlook of the tallest waterfall in South Carolina. A great balance between effort and reward.",
+    "length": 4.0,
+    "type": "Out & Back",
+    "difficulty": "MODERATE",
+    "rating": 4.6,
+    "reviews": [
+      {
+        "author": "HikingLover92",
+        "rating": 5,
+        "review": "Absolutely beautiful! The waterfall is stunning, especially after rain."
+      },
+      {
+        "author": "WeekendExplorer",
+        "rating": 4,
+        "review": "Nice hike, but the overlook can get crowded."
+      },
+      {
+        "author": "TrailSeeker",
+        "rating": 4.5,
+        "review": "Loved the trail, though I wish you could get closer to the falls."
+      }
+    ],
+    "pictures": [
+      "images/ravencliff1.jpg",
+      "images/ravencliff2.jpg",
+      "images/ravencliff3.jpg"
+    ]
+  }
+]
