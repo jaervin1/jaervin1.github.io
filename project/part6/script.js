@@ -3,7 +3,7 @@ document.getElementById("hamburger-toggle").onclick = () => {
 };
 
 const getActivities = async () => {
-  const url = "https://github.com/jaervin1/jaervin1.github.io/blob/main/json/activity.json";
+  const url = "https://jaervin1.github.io/json/activity.json";
   try {
     const response = await fetch(url);
     return response.json;
