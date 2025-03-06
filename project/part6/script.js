@@ -20,8 +20,6 @@ const showActivities = async () => {
     const activitySection = document.createElement("div");
     const activityInfo = document.createElement("div");
 
-    activitySection.appendChild(activityInfo);
-
     const activityName = document.createElement("h3");
     activityName.innerHTML = activity.name;
     activityInfo.appendChild(activityName);
@@ -47,7 +45,13 @@ const showActivities = async () => {
 
     activityImage.appendChild(image);
 
+    activityInfo.classList.add("result-info");
+    activitySeciton.appendChild(activityInfo);
+
+    activityImage.classList.add("result-image");
     activitySection.appendChild(activityImage);
+
+    activitySection.classList.add("result", "content");
 
     activitiesSection.appendChild(activitySection);
   });
