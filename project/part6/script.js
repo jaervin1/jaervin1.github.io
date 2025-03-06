@@ -26,11 +26,16 @@ const showActivities = async () => {
 
     //Stars
     const rating = Math.round(activity.rating);
+    console.log(activity.rating);
     for (let i = 1; i <= 5; i++) {
       const star = document.createElement("span");
       star.classList.add("fa", "fa-star");
       if (i <= rating) {
         star.classList.add("checked");
+        console.log(rating);
+      }
+      else {
+        star.classList.add("unchecked");
       }
       activityInfo.appendChild(star);
     }
