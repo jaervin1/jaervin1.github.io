@@ -187,6 +187,17 @@ main {
   font-size: 3ch;
 }
 
+.result-info span{
+  color: var(--primary);
+  font-size: 2ch;
+  margin: 0 5px;
+}
+
+.result-info h3{
+  padding-right: 10px;
+
+}
+
 .result-image {
   margin: 10px;
   flex: 1;

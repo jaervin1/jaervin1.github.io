@@ -16,7 +16,7 @@ const showActivities = async () => {
   const activities = await getActivities();
   const activitiesSection = document.getElementById("explore");
 
-  activities.array.forEach((activity) => {
+  activities.forEach((activity) => {
     const activitySection = document.createElement("div");
     const activityInfo = document.createElement("div");
 
@@ -25,6 +25,7 @@ const showActivities = async () => {
     activityInfo.appendChild(activityName);
 
     //Stars
+    const rating = Math.round(activity.rating);
     for (let i = 1; i <= 5; i++) {
       const star = document.createElement("span");
       star.classList.add("fa", "fa-star");
@@ -41,12 +42,15 @@ const showActivities = async () => {
     const activityImage = document.createElement("div");
     const image = document.createElement("img");
 
-    image.src = activity.pictures.at(0); // First Picture
+    image.src =
+      activity.pictures && activity.pictures.length > 0
+        ? activity.pictures[0] // First Picture
+        : "images/default.jpg"; //Default 
 
     activityImage.appendChild(image);
 
     activityInfo.classList.add("result-info");
-    activitySeciton.appendChild(activityInfo);
+    activitySection.appendChild(activityInfo);
 
     activityImage.classList.add("result-image");
     activitySection.appendChild(activityImage);
