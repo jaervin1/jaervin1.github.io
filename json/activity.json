@@ -27,7 +27,7 @@
         "comment": "AWESOME"
       }
     ],
-    "pictures": ["images/image1.jpg", "images/image2.jpg", "images/image3.jpg"]
+    "pictures": ["images/trail1.jpg", "images/image2.jpg", "images/image3.jpg"]
   },
   {
     "name": "Table Rock Trail",
@@ -56,7 +56,7 @@
         "comment": "One of the best hikes in the state. Amazing views!"
       }
     ],
-    "pictures": ["images/image1.jpg", "images/image2.jpg", "images/image3.jpg"]
+    "pictures": ["images/trail-two.jpg", "images/image2.jpg", "images/image3.jpg"]
   },
   {
     "name": "Raven Cliff Falls Trail",
@@ -86,7 +86,7 @@
       }
     ],
     "pictures": [
-      "images/ravencliff1.jpg",
+      "images/trail-two.jpg",
       "images/ravencliff2.jpg",
       "images/ravencliff3.jpg"
     ]
