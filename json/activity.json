@@ -90,5 +90,63 @@
       "images/ravencliff2.jpg",
       "images/ravencliff3.jpg"
     ]
+  },
+  {
+    "name": "Foothills Trail - Laurel Valley to Sassafras Mountain",
+    "_id": 4,
+    "author": "mountainman",
+    "location": "Foothills Trail",
+    "description": "A tough but rewarding section of the Foothills Trail, leading to the highest point in South Carolina with incredible views.",
+    "length": 14.2,
+    "type": "Point to Point",
+    "difficulty": "HARD",
+    "rating": 4.9,
+    "reviews": [
+      {
+        "author": "TrailMaster87",
+        "rating": 5,
+        "comment": "Challenging but totally worth it! Sassafras Mountain is breathtaking."
+      },
+      {
+        "author": "AdventureGal",
+        "rating": 5,
+        "comment": "One of the best long hikes I've done in SC. Lots of variety in the terrain!"
+      },
+      {
+        "author": "BackpackerPro",
+        "rating": 4.5,
+        "comment": "Great experience, but definitely not for beginners. Be prepared!"
+      }
+    ],
+    "pictures": ["images/trail-three.jpg", "images/sassafras-mountain.jpg", "images/valley-view.jpg"]
+  },
+  {
+    "name": "Kings Mountain National Recreation Trail",
+    "_id": 5,
+    "author": "historyhiker",
+    "location": "Kings Mountain National Military Park",
+    "description": "A historical trail that follows the path of Revolutionary War soldiers, featuring rolling terrain and informative markers along the way.",
+    "length": 16.0,
+    "type": "Loop",
+    "difficulty": "MODERATE",
+    "rating": 4.3,
+    "reviews": [
+      {
+        "author": "HistoryBuff101",
+        "rating": 5,
+        "comment": "Loved the mix of history and nature. Great interpretive signs!"
+      },
+      {
+        "author": "TrailRunner88",
+        "rating": 4,
+        "comment": "Nice trail for running, but some sections can get muddy."
+      },
+      {
+        "author": "WeekendExplorer",
+        "rating": 4.5,
+        "comment": "A long but enjoyable hike with some cool historical sites."
+      }
+    ],
+    "pictures": ["images/trail-four.jpg", "images/trail-sign.jpg", "images/historical-marker.jpg"]
   }
 ]

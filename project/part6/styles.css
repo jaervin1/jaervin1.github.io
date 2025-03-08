@@ -8,6 +8,7 @@
   --review-background: #adb5bd;
   --header-color:#3a5a40;
   --page-background:#ebeee6;
+  --unchecked-star: #7a8c7b;
 
 }
 
@@ -188,9 +189,16 @@ main {
 }
 
 .result-info span{
-  color: var(--primary);
   font-size: 2ch;
   margin: 0 5px;
+}
+
+.checked {
+  color: var(--primary);
+}
+
+.unchecked {
+  color: var(--unchecked-star);
 }
 
 .result-info h3{
