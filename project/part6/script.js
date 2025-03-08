@@ -115,6 +115,7 @@ const showActivities = async () => {
   const activitiesSection = document.getElementById("explore");
 
   activities.forEach((activityData) => {
+    console.log("activity");
     const activity = new Activity(
       activityData.name,
       activityData.id,

@@ -27,7 +27,11 @@
         "comment": "AWESOME"
       }
     ],
-    "pictures": ["images/trail-one.jpg", "images/image2.jpg", "images/image3.jpg"]
+    "pictures": [
+      "images/trail-one.jpg",
+      "images/image2.jpg",
+      "images/image3.jpg"
+    ]
   },
   {
     "name": "Table Rock Trail",
@@ -56,7 +60,11 @@
         "comment": "One of the best hikes in the state. Amazing views!"
       }
     ],
-    "pictures": ["images/trail-two.jpg", "images/image2.jpg", "images/image3.jpg"]
+    "pictures": [
+      "images/trail-two.jpg",
+      "images/image2.jpg",
+      "images/image3.jpg"
+    ]
   },
   {
     "name": "Raven Cliff Falls Trail",
@@ -118,7 +126,11 @@
         "comment": "Great experience, but definitely not for beginners. Be prepared!"
       }
     ],
-    "pictures": ["images/trail-three.jpg", "images/sassafras-mountain.jpg", "images/valley-view.jpg"]
+    "pictures": [
+      "images/trail-three.jpg",
+      "images/sassafras-mountain.jpg",
+      "images/valley-view.jpg"
+    ]
   },
   {
     "name": "Kings Mountain National Recreation Trail",
@@ -147,6 +159,10 @@
         "comment": "A long but enjoyable hike with some cool historical sites."
       }
     ],
-    "pictures": ["images/trail-four.jpg", "images/trail-sign.jpg", "images/historical-marker.jpg"]
+    "pictures": [
+      "images/trail-four.jpg",
+      "images/trail-sign.jpg",
+      "images/historical-marker.jpg"
+    ]
   }
 ]

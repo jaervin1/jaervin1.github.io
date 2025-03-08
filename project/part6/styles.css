@@ -201,6 +201,10 @@ main {
   color: var(--unchecked-star);
 }
 
+.activityModal{
+  border: var(--primary) 1px solid;
+}
+
 .result-info h3{
   padding-right: 10px;
 
