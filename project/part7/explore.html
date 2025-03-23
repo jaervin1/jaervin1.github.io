@@ -1,0 +1,70 @@
+<html lang="en">
+  <head>
+    <title>Wireframe Recreation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <h2>OutdoorSC</h2>
+      <div class="hamburger-toggle" id="hamburger-toggle">
+        <i class="fa fa-bars"></i>
+      </div>
+      <ul class="nav-links nav-hidden">
+        <li>
+          <a href="index.html"><i class="fa fa-home"></i> Home</a>
+        </li>
+        <li>
+          <a href="explore.html"><i class="fa fa-binoculars"></i> Explore</a>
+        </li>
+        <li>
+          <a href="profile.html"><i class="fa fa-user"></i> Profile</a>
+        </li>
+        <li>
+          <a href="about_us.html"
+            ><i class="fa fa-question-circle"></i> About Us</a
+          >
+        </li>
+        <li class="search-container">
+          <input type="text" class="search-bar" placeholder="Search..." />
+        </li>
+      </ul>
+    </nav>
+    <main id="explore-page">
+      <section class="search-container">
+        <input type="text" class="search-input" placeholder="Search" />
+        <input type="text" class="zipcode-input" placeholder="29201" />
+        <i class="fa fa-map-marker"></i>
+      </section>
+
+      <section class="filters">
+        <button>Distance</button>
+        <button>Rating (stars)</button>
+        <button>Difficulty</button>
+        <button>Activity Type</button>
+        <a href="add_activity.html"
+          ><button><i class="fa fa-plus-circle" aria-hidden="true"></i></button
+        ></a>
+      </section>
+      <section class="explore" id="explore">
+        <div id="activityModal" class="w3-modal">
+          <div class="w3-modal-content">
+            <header class="w3-container">
+              <span onclick="document.getElementById('activityModal').style.display='none'"
+                class="w3-button w3-display-topright">&times;</span>
+            </header>
+            <div id="modalContent" class="w3-container">
+            </div>
+          </div>
+        </div>
+      </section>
+      <script src="script.js"></script>
+    </main>
+    <footer>
+      <h2>&copy; 2025 Alex Ervin</h2>
+    </footer>
+  </body>
+</html>
