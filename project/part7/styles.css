@@ -577,7 +577,7 @@ h1, h2, h3, h4{
   color: var(--header-color);
 }
 
-#form input{
+#form input, #form textarea{
   font-size: medium;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--header-color);
