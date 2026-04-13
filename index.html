@@ -1,190 +1,168 @@
 <!DOCTYPE html>
-<html lang="eng">
-
+<html lang="en">
 <head>
-  <title>CSCE 242: Web Applications</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Ervin | GLD ePortfolio</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+<body>
 
-<body id="main-page">
-  <header>
-    <h3>Alex Ervin</h3>
-    <h1>CSCE 242: Client-Server Computing</h1>
+  <!-- Navigation -->
+  <nav class="site-nav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Alex Ervin <span>| GLD</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">About Me</a></li>
+        <li><a href="key-insight-1.html">Key Insight 1</a></li>
+        <li><a href="key-insight-2.html">Key Insight 2</a></li>
+        <li><a href="key-insight-3.html">Key Insight 3</a></li>
+        <li><a href="leadership.html">Leadership</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="page-hero">
+    <div class="container">
+      <span class="kicker">GLD ePortfolio, Research Pathway</span>
+      <h1>Alexander Ervin</h1>
+    </div>
   </header>
-  <main id="content">
-    <h2>Assignments</h2>
-    <div id="assignments">
-      <section class="assignment">
-        <h2>
-          <a href="assignments/assignment01/index.html">Assignment 1: Basic HTML</a>
-        </h2>
-        <img src="images/assignment01image.png" />
-        <p>
-          A smooth introduction to HTML and associated elements or tags such
-          as h1, h2, p, and many others.
-        </p>
-      </section>
-      <section class="assignment">
-        <h2>
-          <a href="assignments/assignment02/index.html">Assignment 2: Basic CSS</a>
-        </h2>
-        <img src="images/assignment02image.png" />
-        <p>
-          Using CSS, styled a simple HTML page with fitting colors, images,
-          and font variations in order to make a plain website into something
-          with more character.
-        </p>
-      </section>
-      <section class="assignment">
-        <h2>
-          <a href="assignments/assignment03/index.html">Assignment 3: Page Layout</a>
-        </h2>
-        <img src="images/assignment03image.png" />
-        <p>
-          Experimented with flex in HTML and CSS. Incorporated different ratio
-          types, as well as support for a variety of different media,
-          including lower and higher resolution screens to still be able to
-          properly view the website as intended.
-        </p>
-      </section>
-      <section class="assignment">
-        <h2>
-          <a href="assignments/assignment04/index.html">Assignment 4: Recreate Page</a>
-        </h2>
-        <img src="images/assignment04image.png" />
-        <p>
-          Experimented with flex in HTML and CSS. Incorporated different ratio
-          types, as well as support for a variety of different media,
-          including lower and higher resolution screens to still be able to
-          properly view the website as intended.
-        </p>
-      </section>
-      <section class="assignment">
-        <h2>
-          <a href="assignments/assignment05/index.html">Assignment 5: Intro to JavaScript</a>
-        </h2>
-        <img src="images/assignment05image.png" />
-        <p>
-          Introduced to JavaScript and functionalities. This includes buttons,
-          inputs, and modifications of the html content of elements.
-        </p>
-      </section>
-      <section class="assignment">
-        <h2>
-          <a href="assignments/assignment06/index.html">Assignment 6: JavaScript Conditionals</a>
-        </h2>
-        <img src="images/assignment06image.png" />
-        <p>
-          Expanded JavaScript knowledge by adding conditionals into our
-          websites. This includes observing the value of input elements,
-          buttons, and finding more utiliiations for functions.
-        </p>
-      </section>
-      <section class="assignment">
-        <h2>
-          <a href="assignments/assignment07/index.html">Assignment 7: JavaScript Loops</a>
-        </h2>
-        <img src="images/assignment07image.png" />
-        <p>
-          Introduced to Loops, and timing functions in JavaScript.
-        </p>
-      </section>
-      <section class="assignment">
-        <h2>
-          <a href="assignments/assignment08/index.html">Assignment 8: JavaScript Arrays</a>
-        </h2>
-        <img src="images/assignment08image.png" />
-        <p>
-          Introduced to Arrays, Associative Arrays, and functions related to them. Utilized this along side the
-          creation of a simple popup tab to show the image counterpart of a phrase.
-        </p>
-      </section>
-      <section class="assignment">
-        <h2>
-          <a href="assignments/assignment09/index.html">Assignment 8: JavaScript Classes</a>
-        </h2>
-        <img src="images/assignment09image.png" />
-        <p>
-          Expanded understanding of JS using JavaScript's class system. I created a class for pizzas in order to create
-          multiple objects containing features of pizzas such as ingredients, price, and sauce.
-        </p>
-      </section>
-      <section class="assignment">
-        <h2>
-          <a href="#">Assignment 10: Node Intro</a>
-        </h2>
-        <img src="images/assignment10image.png" />
-        <h3><a href="https://github.com/jaervin1/hello_world_server_side/tree/main">Code Repo</a></h3>
-        <h3><a href="https://hello-world-server-side-vgph.onrender.com/">Live Demo</a></h3>
-      </section>
-    </div>
-    <hr />
-    <h2>Main Project</h2>
-    <div id="project">
-      <section class="project-content">
-        <h2>
-          <a href="project/part1/web-applications-project-info.pdf">Project Part 1</a>
-        </h2>
-        <img src="images/project1.png" />
-        <p>
-          Started creating ideas for a website. Ended up on a outdoorsy forum
-          where people can share ideas, treks, and their opinions on each and
-          every one of them.
-        </p>
-      </section>
-      <section class="project-content">
-        <h2>
-          <a href="project/part2/index.html">Project Part 2</a>
-        </h2>
-        <img src="images/project2.png" />
-        <p>
-          Created a mockit board for prototyping the website idea. Contains
-          all important features that will be in the final website.
-        </p>
-      </section>
-      <section class="project-content">
-        <h2>
-          <a href="project/part3/index.html">Project Part 3</a>
-        </h2>
-        <img src="images/project3.png" />
-        <p>Created a prototype html page based on our wireframes.</p>
-      </section>
-      <section class="project-content">
-        <h2>
-          <a href="project/part4/index.html">Project Part 4</a>
-        </h2>
-        <img src="images/project4.png" />
-        <p>Developed my prototype with a color palatte, resized images, and a navigation bar.</p>
-      </section>
-      <section class="project-content">
-        <h2>
-          <a href="project/part7/index.html">Project Part 7</a>
-        </h2>
-        <img src="images/project7.png"/>
-        <p>Added a map utilization and forms to the website.</p>
-      </section>
-      <section class="project-content">
-        <h2>
-          <a href="#">Project Part 8</a>
-        </h2>
-        <img src="images/project8.png"/>
-        <p>Transitioned the website into a react app hosted using Github pages</p>
-        <a href="https://jaervin1.github.io/OutdoorSC">OutdoorSC React Site</a>
-      </section>
-      <section class="project-content">
-        <h2>
-          <a href="#">Project Part 9</a>
-        </h2>
-        <img src="images/project9.png"/>
-        <p>Added more functionality with react, and added a backend server to host our json data that will be used in the website.</p>
-        <a href="https://outdoorsc-backend.onrender.com/">Backend Website</a>
-        <a href="https://github.com/jaervin1/outdoorsc_backend">Backend Github</a>
-        <a href="https://jaervin1.github.io/OutdoorSC">OutdoorSC React Site</a>
-        <a href="https://github.com/jaervin1/OutdoorSC">OutdoorSC Github</a>
-      </section>
-    </div>
-  </main>
-  <footer></footer>
-</body>
 
+  <!-- About Me -->
+  <main>
+    <section class="content-section">
+      <div class="container">
+        <div class="about-grid">
+
+          <!-- Text -->
+          <div>
+            <span class="section-label">About Me</span>
+            <h2 class="section-title">Who Am I?</h2>
+            <div class="prose">
+              <p>
+                My name is Alexander Ervin; I am a senior at the University of South Carolina majoring in
+                Computer Information Systems. I will be graduating in May 2026 with Leadership Distinction
+                in Research. My time at UofSC has not only helped me develop my academic/research
+                portfolio, but it also widened my leadership potential and communication skills within and
+                beyond the classroom setting. Ultimately, these experiences led me to find my passion
+                within research and creating measurable positive change within my academic domain.
+              </p>
+              <p>
+                Following graduation, I am going to be pursuing a master&rsquo;s degree and eventually a
+                doctorate in Computer Science. Currently, my goal is to utilize these degrees to become a
+                professor at a research institution such as UofSC. Particularly, I want to research ways
+                to improve the ethics and trust aspects of modern computing practices. For example,
+                researching ways to make Artificial Intelligence safer for users, less biased, and more
+                beneficial to the average person. Despite the glamour and publicity given to companies
+                creating AI Models (OpenAI, Google, Anthropic, etc.), there is a growing concern onto the
+                ethics, interpretability, and robustness of these models. Specifically, how can we
+                guarantee that these models are aligned to our understanding of good values, and how can
+                we know that isn&rsquo;t properly learning the patterns we wish it to. All these questions
+                are ones I think about often and hope to answer in my research career. One day I hope to
+                not only output meaningful research to the academic community, but to also serve as an
+                advocate and mentor for the next generation of researchers, thinkers, and creatives.
+              </p>
+              <p>
+                At the beginning of my time at UofSC, I wished to simply get through the years required,
+                not being concerned with extracurriculars, pursuing academic satisfaction, or anything
+                like that. I simply wanted to do well enough to pass and eventually graduate. Despite this
+                predisposition, I found myself becoming more ambitious, motivated, and social as time
+                passed. In my second year, I reached out to a professor regarding research, opening a door
+                to a research opportunity that is still happening to this day. Additionally, having the
+                opportunity to present my research at the Summer Symposium showed me that I didn&rsquo;t
+                just enjoy doing research as a job, but I had become fully engrossed in the subject,
+                breaking ground on topics that very few have touched. Additionally, in my second year I
+                became involved with the Gamecock Cyber Club, having weekly presentations discussing
+                cyber-related topics to a diverse audience of students. UofSC has not just been the
+                institution in which I gained the necessary skills for my future career, but it served as
+                a cultivator for me to become more confident, expressive, and ambitious.
+              </p>
+            </div>
+          </div>
+
+          <!-- Photos -->
+          <div class="photo-stack">
+            <figure class="photo-card">
+              <img src="assets/ProfPhoto.jpg" alt="Professional photo of Alexander Ervin" />
+              <figcaption>Headshot</figcaption>
+            </figure>
+            <figure class="photo-card">
+              <img src="assets/tigerburn.jpg" alt="Alexander Ervin at the 2025-26 Tiger Burn" />
+              <figcaption>Tiger Burn 2025&ndash;26</figcaption>
+            </figure>
+          </div>
+
+        </div>
+
+        <figure class="wide-photo-card">
+          <img src="assets/SummerSymposium.jpg" alt="Alexander Ervin at the UofSC Summer Symposium" />
+          <figcaption>UofSC Summer Symposium</figcaption>
+        </figure>
+
+        <a href="assets/AlexErvinResume.pdf" download class="resume-btn">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                Download Resume
+              </a>
+
+      </div>
+    </section>
+
+    <!-- Portfolio Overview -->
+    <section class="overview-section">
+      <div class="container">
+        <span class="section-label">Portfolio</span>
+        <h2 class="section-title">Research Pathway Overview</h2>
+        <p style="max-width: 68ch; color: var(--gray-700);">
+          The Research Pathway within the Graduation with Leadership Distinction (GLD) program focuses
+          on highlighting experiences within research and within/beyond the classroom during my time at
+          the University of South Carolina. Also found in this portfolio is my leadership section
+          &lsquo;Lineage, a tool for artists in an age of AI Generated &ldquo;art&rdquo;&rsquo;. This
+          section highlights the problem plaguing many artists and digital creators. AI corporations
+          often train their models on all available data (images, text, music, etc.) even if it is not
+          allowed. As a result, the models that the corporation creates will have a massive catalogue of
+          skills and reference material when generating content whereas the artists on which the models
+          are trained on have no way to get reimbursed or justice.
+        </p>
+
+        <div class="overview-grid">
+          <a href="key-insight-1.html" class="overview-card">
+            <div class="overview-card__num">Key Insight 1</div>
+            <h3>Importance of Building a Strong Academic Foundation</h3>
+            <p>How foundational concepts in algorithms shaped the way I teach, learn, and approach research.</p>
+          </a>
+          <a href="key-insight-2.html" class="overview-card">
+            <div class="overview-card__num">Key Insight 2</div>
+            <h3>Concerns and Risks in Artificial Intelligence</h3>
+            <p>How coursework and research revealed the ethical stakes of interpretable, trustworthy AI.</p>
+          </a>
+          <a href="key-insight-3.html" class="overview-card">
+            <div class="overview-card__num">Key Insight 3</div>
+            <h3>Value of Disseminating Knowledge</h3>
+            <p>Why sharing technical knowledge with diverse audiences is essential to a field's growth.</p>
+          </a>
+          <a href="leadership.html" class="overview-card">
+            <div class="overview-card__num">Leadership</div>
+            <h3>Lineage: A Tool for Artists in an Age of AI-Generated Art</h3>
+            <p>A pilot program helping digital artists detect unauthorized use of their work in generative AI models.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-name">Alexander Ervin | GLD ePortfolio</span>
+      <div class="footer-links">
+        <a href="mailto:jaervin616@gmail.com">jaervin616@gmail.com</a>
+        <a href="https://www.linkedin.com/in/jaervin1" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/jaervin1" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
 </html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leadership | Alex Ervin GLD ePortfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="site-nav" aria-label="Primary navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-brand">Alex Ervin <span>| GLD</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">About Me</a></li>
+        <li><a href="key-insight-1.html">Key Insight 1</a></li>
+        <li><a href="key-insight-2.html">Key Insight 2</a></li>
+        <li><a href="key-insight-3.html">Key Insight 3</a></li>
+        <li><a href="leadership.html" class="active">Leadership</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="page-hero page-hero--inner">
+    <div class="container">
+      <span class="insight-tag">Leadership Section</span>
+      <h1>Lineage</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="content-section">
+      <div class="container">
+
+        <!-- Context -->
+        <span class="section-label">Context</span>
+        <h2 class="section-title">Background</h2>
+        <div class="prose">
+          <p>
+            Throughout my time at UofSC as a student, Teaching Assistant, and Research Assistant, I
+            have been exposed to a wide range of issues at the intersection of computing and society.
+            Most recently, my enrollment in CSCE 581 (Trusted Artificial Intelligence) has brought into
+            my knowledge a crisis in the field of Artificial Intelligence, specifically Generative AI.
+            As seen in Key Insight 2, there is a lack of accountability surrounding the unauthorized or
+            illegal use of digital and physical artwork in the training of generative models. With the
+            rise in popularity and use of text-to-image applications, artists of all backgrounds are
+            finding their work scraped from the internet without their consent, compensation, or
+            acknowledgement. These trained models then gain the capability to mimic a creator&rsquo;s
+            unique style, effectively profiting from their artistic identity [1]. The oligarchical
+            nature of the AI industry along with limited modern legislation provides little recourse for
+            artists to be compensated or be provided justice. Additionally, the cloudiness of these
+            models plays a major hand in leaving artists with little technical means of proving their
+            work was used. Without intervention, independent creators will remain powerless against
+            large tech companies. My goal is addressing this issue by creating a local pilot program of
+            <strong>Lineage</strong>, a tool for artist&rsquo;s seeking to empirically prove that their
+            work is being utilized by a large language model (LLM).
+          </p>
+        </div>
+
+        <!-- Visual comparison -->
+        <div style="margin-top: 2.25rem;">
+          <p class="comparison-label">The Problem in Pictures</p>
+          <div class="comparison-grid">
+            <figure class="comparison-figure">
+              <img src="assets/ghibli.jpg" alt="Still from Spirited Away by Studio Ghibli" />
+              <figcaption>Studio Ghibli, <em>Spirited Away</em> (original)</figcaption>
+            </figure>
+            <figure class="comparison-figure">
+              <img src="assets/ai_ghibli.jpg" alt="AI-generated image replicating the Studio Ghibli style" />
+              <figcaption>AI-generated image replicating the Ghibli style</figcaption>
+            </figure>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Problem -->
+    <section class="content-section">
+      <div class="container">
+        <span class="section-label">The Problem</span>
+        <h2 class="section-title">What Artists Are Up Against</h2>
+        <div class="prose">
+          <p>
+            One of the biggest problems being faced by digital artists today is the absence of tools
+            that can detect the unauthorized use of their work in Generative AI models, specifically
+            text-to-image models such as DALL-E 3, Stable Diffusion, and Imagen. Large-scale
+            institutions have already tried to combat this dilemma but results in court often favor the
+            tech giants. For example, in June 2025, <em>Bartz v. Anthropic</em> [2] found that
+            generative LLM training was &ldquo;exceedingly&rdquo; transformative, therefore qualifying
+            to use under fair use. Furthermore, many affected creators/artists lack both the legal
+            resources as well as technical evidence needed to pursue accountability. Current frontier AI
+            models operate as what is called &ldquo;Black Box&rdquo; models. This means that the
+            underlying mechanisms limit users&rsquo; ability to trace whether their art was trained on,
+            or whether their distinct style has been replicated by the generative system. The appeal and
+            profits of these companies come from models that are trained off billions of people&rsquo;s
+            personal content, but when asked, they fail to allow this content to be accessible by those
+            being most harmed. Without a reliable detection method, artists are left to rely solely on
+            visual resemblance or hunches, which holds little weight in allowing reprieve to said
+            parties.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Implementation Plan -->
+    <section class="content-section">
+      <div class="container">
+        <span class="section-label">Implementation Plan</span>
+        <h2 class="section-title">How Lineage Works</h2>
+
+        <div class="phases">
+
+          <div class="phase-card">
+            <div class="phase-card__label">Phase 1</div>
+            <h4>Development &amp; Validation</h4>
+            <ul>
+              <li>Acquire and catalog open-source art datasets.</li>
+              <li>
+                Build style and content vectors to create high-dimensional classification for known
+                artists, which are numeric representations describing both the content and the style of
+                each image.
+              </li>
+              <li>Test the vector engine for accuracy using AUC, ROC, and Confusion Matrix metrics.</li>
+            </ul>
+          </div>
+
+          <div class="phase-card">
+            <div class="phase-card__label">Phase 2</div>
+            <h4>Community Outreach &amp; Pilot Testing</h4>
+            <ul>
+              <li>Partner with UofSC student art organizations to identify volunteer testers.</li>
+              <li>Introduce the tool to a small group of independent creators.</li>
+              <li>Collect feedback on usability and accessibility.</li>
+            </ul>
+          </div>
+
+          <div class="phase-card">
+            <div class="phase-card__label">Phase 3</div>
+            <h4>Legal Framework</h4>
+            <ul>
+              <li>
+                Engage local legal and copyright resources to assess how findings could support formal
+                dispute resolution.
+              </li>
+              <li>Identify scaling opportunities beyond UofSC after pilot completion.</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Evaluation -->
+    <section class="content-section">
+      <div class="container">
+        <span class="section-label">Evaluation</span>
+        <h2 class="section-title">Measuring Success</h2>
+        <div class="prose">
+          <p>
+            My evaluation plan mainly focuses on fitting the adapting scene of AI text-to-image
+            technology as well as fitting the tool to the needs of users. Throughout implementation, I
+            will continuously be gathering and implementing feedback from pilot group to ensure that
+            Lineage remains relevant and responsive as the gen AI landscape evolves. Additionally,
+            feedback will be used to assess whether the findings are accurate, interpretable to users,
+            and actionable enough for artists to be willing to use it. Ultimately, success will be
+            determined by the rate at which creators feel more empowered and equipped to advocate for
+            themselves against unauthorized use of their works.
+          </p>
+        </div>
+
+        <!-- Citations -->
+        <div class="citations" style="margin-top: 2.5rem;">
+          <span class="section-label">Citations</span>
+          <ol>
+            <li>
+              Bendel, O. Image synthesis from an ethical perspective.
+              <em>AI &amp; Society</em> 40, 437&ndash;446 (2025).
+              <a href="https://doi.org/10.1007/s00146-023-01780-4" target="_blank" rel="noopener">
+                doi.org/10.1007/s00146-023-01780-4
+              </a>
+            </li>
+            <li>
+              NPR. &ldquo;Federal court rules in AI company&rsquo;s favor in landmark copyright
+              infringement lawsuit.&rdquo; <em>Bartz v. Anthropic</em>, June 2025.
+            </li>
+            <li>
+              AGG Publications. &ldquo;The Fine Line Between Inspiration and Infringement:
+              Studio Ghibli vs. AI Generator.&rdquo;
+              <a href="https://www.agg.com/news-insights/publications/the-fine-line-between-inspiration-and-infringement-studio-ghibli-vs-ai-generator/" target="_blank" rel="noopener">
+                agg.com
+              </a>
+            </li>
+          </ol>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-name">Alexander Ervin | GLD ePortfolio</span>
+      <div class="footer-links">
+        <a href="mailto:jaervin616@gmail.com">jaervin616@gmail.com</a>
+        <a href="https://www.linkedin.com/in/jaervin1" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/jaervin1" target="_blank" rel="noopener">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
