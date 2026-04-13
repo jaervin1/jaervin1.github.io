@@ -1,36 +1,24 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const lightbox    = document.getElementById('lightbox');
-  const lightboxImg = document.getElementById('lightbox-img');
-  const closeBtn    = document.getElementById('lightbox-close');
+  // Clicking an artifact image opens the source file in a new tab by default.
+  // Add data-download="true" to force browser download behavior instead.
+  document.querySelectorAll('.artifact-screenshot').forEach((img) => {
+    img.style.cursor = 'pointer';
 
-  function openLightbox(src, alt) {
-    lightboxImg.src = src;
-    lightboxImg.alt = alt || '';
-    lightbox.classList.add('open');
-    document.body.style.overflow = 'hidden';
-  }
+    img.addEventListener('click', () => {
+      const href = img.getAttribute('data-file') || img.getAttribute('src');
+      if (!href) return;
 
-  function closeLightbox() {
-    lightbox.classList.remove('open');
-    document.body.style.overflow = '';
-    lightboxImg.src = '';
-  }
+      if (img.getAttribute('data-download') === 'true') {
+        const link = document.createElement('a');
+        link.href = href;
+        link.setAttribute('download', '');
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        return;
+      }
 
-  // Any artifact-screenshot image (including those inside clip wrappers)
-  document.querySelectorAll('.artifact-screenshot').forEach(img => {
-    img.addEventListener('click', () => openLightbox(img.src, img.alt));
-  });
-
-  // Close on backdrop click
-  lightbox.addEventListener('click', e => {
-    if (e.target === lightbox) closeLightbox();
-  });
-
-  // Close button
-  closeBtn.addEventListener('click', closeLightbox);
-
-  // Close on Escape key
-  document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') closeLightbox();
+      window.open(href, '_blank', 'noopener,noreferrer');
+    });
   });
 });
